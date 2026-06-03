@@ -233,3 +233,45 @@ function reiniciarQuiz() {
 }
 
 renderizarPergunta();
+
+function validarCampo(id, mensagemErro) {
+  const campo = document.getElementById(id);
+  const erro = document.getElementById(id + '-error');
+  const valor = campo.value.trim();
+
+  if (!valor) {
+    campo.classList.add('invalid');
+    erro.textContent = mensagemErro;
+    return false;
+  }
+
+  if (id === 'email') {
+    const regexEmail = /^[^\s@]+@[^\s@]+.[^\s@]+$/;
+    if (!regexEmail.test(valor)) {
+      campo.classList.add('invalid');
+      erro.textContent = 'Digite um e-mail válido.';
+      return false;
+    }
+  }
+
+  campo.classList.remove('invalid');
+  erro.textContent = '';
+  return true;
+}
+
+function limparErro(id) {
+  const campo = document.getElementById(id);
+  const erro = document.getElementById(id + '-error');
+  if (campo.value.trim()) {
+    campo.classList.remove('invalid');
+    erro.textContent = '';
+  }
+}
+
+['nome', 'email', 'municipio', 'perfil', 'mensagem'].forEach(function(id) {
+  const campo = document.getElementById(id);
+  if (campo) {
+    campo.addEventListener('input', function() { limparErro(id); });
+    campo.addEventListener('change', function() { limparErro(id); });
+  }
+});
