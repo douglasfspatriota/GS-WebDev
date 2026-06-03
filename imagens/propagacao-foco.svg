@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+            <defs>
+              <pattern id="topo" width="24" height="24" patternUnits="userSpaceOnUse">
+                <circle cx="2" cy="2" r=".6" fill="#0B1A30" opacity=".18"></circle>
+              </pattern>
+              <radialGradient id="fire-4h" cx="50%" cy="60%" r="50%">
+                <stop offset="0%" stop-color="#E8453A" stop-opacity=".95"></stop>
+                <stop offset="55%" stop-color="#E8453A" stop-opacity=".35"></stop>
+                <stop offset="100%" stop-color="#E8453A" stop-opacity="0"></stop>
+              </radialGradient>
+              <radialGradient id="fire-2h" cx="50%" cy="60%" r="50%">
+                <stop offset="0%" stop-color="#E07A2F" stop-opacity=".9"></stop>
+                <stop offset="100%" stop-color="#E07A2F" stop-opacity="0"></stop>
+              </radialGradient>
+              <radialGradient id="fire-30m" cx="50%" cy="60%" r="50%">
+                <stop offset="0%" stop-color="#E8B84B" stop-opacity=".95"></stop>
+                <stop offset="100%" stop-color="#E8B84B" stop-opacity="0"></stop>
+              </radialGradient>
+              <linearGradient id="smoke" x1="0" x2="0" y1="1" y2="0">
+                <stop offset="0%" stop-color="#0B1A30" stop-opacity=".55"></stop>
+                <stop offset="100%" stop-color="#0B1A30" stop-opacity="0"></stop>
+              </linearGradient>
+            </defs>
+
+            
+            <rect width="500" height="400" fill="#FBF8EE"></rect>
+            <rect width="500" height="400" fill="url(#topo)"></rect>
+
+            
+            <g fill="none" stroke="#0B1A30" stroke-width=".7" opacity=".18">
+              <path d="M 0 320 Q 130 280 260 305 T 500 290"></path>
+              <path d="M 0 350 Q 150 320 280 335 T 500 320"></path>
+              <path d="M 0 380 Q 140 360 260 370 T 500 360"></path>
+            </g>
+
+            
+            <rect x="0" y="0" width="500" height="110" fill="#0B1A30" opacity=".06"></rect>
+            <g fill="#0B1A30" opacity=".55">
+              <circle cx="55" cy="28" r="1"></circle>
+              <circle cx="110" cy="50" r=".8"></circle>
+              <circle cx="195" cy="22" r="1"></circle>
+              <circle cx="260" cy="45" r=".7"></circle>
+              <circle cx="330" cy="30" r=".9"></circle>
+            </g>
+
+            
+            <g transform="translate(395,55) rotate(-12)">
+              <rect x="-14" y="-9" width="28" height="18" rx="2" fill="#0B1A30"></rect>
+              <rect x="-34" y="-5" width="16" height="10" fill="#E8B84B" opacity=".85"></rect>
+              <rect x="18" y="-5" width="16" height="10" fill="#E8B84B" opacity=".85"></rect>
+              <line x1="-34" y1="-1" x2="-18" y2="-1" stroke="#0B1A30" stroke-width=".5"></line>
+              <line x1="18" y1="-1" x2="34" y2="-1" stroke="#0B1A30" stroke-width=".5"></line>
+              <line x1="0" y1="-9" x2="0" y2="-17" stroke="#0B1A30" stroke-width="1.2"></line>
+              <circle cx="0" cy="-19" r="2" fill="#0B1A30"></circle>
+            </g>
+            
+            <path d="M 60 95 Q 250 25 460 80" stroke="#0B1A30" stroke-width=".8" fill="none" stroke-dasharray="3 4" opacity=".35"></path>
+            
+            <g transform="translate(395,80)">
+              <text x="0" y="0" font-family="JetBrains Mono, monospace" font-size="9" fill="#0B1A30" text-anchor="middle" letter-spacing=".1em">FORA DE JANELA</text>
+            </g>
+
+            
+            <path d="M 0 300 Q 90 270 170 285 Q 250 300 330 280 Q 410 260 500 280 L 500 400 L 0 400 Z" fill="#0B1A30" opacity=".88"></path>
+            <path d="M 0 305 Q 90 275 170 290 Q 250 305 330 285 Q 410 265 500 285" fill="none" stroke="#E8B84B" stroke-width="1" opacity=".5"></path>
+
+            
+            <g transform="translate(220,318)">
+              
+              <ellipse cx="0" cy="-2" rx="170" ry="58" fill="url(#fire-4h)"></ellipse>
+              
+              <ellipse cx="0" cy="-1" rx="110" ry="38" fill="url(#fire-2h)"></ellipse>
+              
+              <ellipse cx="0" cy="0" rx="50" ry="17" fill="url(#fire-30m)"></ellipse>
+              
+              <g>
+                <path d="M 0 -2 Q -4 -10 -1 -16 Q 1 -8 4 -14 Q 6 -8 3 -2 Q 1 -6 0 -2" fill="#E8453A"></path>
+                <path d="M 0 -1 Q -2 -6 0 -9 Q 1 -4 2 -7 Q 3 -3 2 -1 Q 0 -3 0 -1" fill="#E8B84B"></path>
+              </g>
+              <circle cx="0" cy="0" r="2.5" fill="#0B1A30"></circle>
+            </g>
+
+            
+            <path d="M 215 305 Q 200 240 230 180 Q 250 130 230 80 Q 220 60 235 40" stroke="url(#smoke)" stroke-width="28" fill="none" stroke-linecap="round" opacity=".55"></path>
+            <path d="M 220 290 Q 210 230 235 175 Q 250 120 240 80" stroke="#0B1A30" stroke-width="10" fill="none" stroke-linecap="round" opacity=".22"></path>
+
+            
+            <g font-family="JetBrains Mono, monospace" font-size="10" fill="#0B1A30">
+              
+              <line x1="222" y1="318" x2="30" y2="380" stroke="#0B1A30" stroke-width=".7" opacity=".55"></line>
+              <rect x="6" y="370" width="68" height="20" rx="3" fill="#0B1A30"></rect>
+              <text x="40" y="383" fill="#E8B84B" text-anchor="middle" letter-spacing=".06em">T+0 · 100 m²</text>
+
+              
+              <line x1="265" y1="308" x2="160" y2="230" stroke="#0B1A30" stroke-width=".7" opacity=".55"></line>
+              <rect x="114" y="218" width="96" height="20" rx="3" fill="#FFF0C0" stroke="#E8B84B"></rect>
+              <text x="162" y="231" text-anchor="middle" letter-spacing=".06em">T+30 min · 245 m²</text>
+
+              
+              <line x1="325" y1="305" x2="395" y2="235" stroke="#0B1A30" stroke-width=".7" opacity=".55"></line>
+              <rect x="335" y="222" width="118" height="20" rx="3" fill="#E07A2F"></rect>
+              <text x="394" y="235" fill="#FBF8EE" text-anchor="middle" letter-spacing=".06em">T+2 h · 615 m²</text>
+
+              
+              <line x1="380" y1="320" x2="445" y2="310" stroke="#0B1A30" stroke-width=".7" opacity=".55"></line>
+              <rect x="345" y="335" width="140" height="20" rx="3" fill="#E8453A"></rect>
+              <text x="415" y="348" fill="#FBF8EE" text-anchor="middle" letter-spacing=".06em">T+4 h · 3 685 m²</text>
+            </g>
+
+            
+            <g font-family="JetBrains Mono, monospace" fill="#0B1A30">
+              <rect x="22" y="22" width="8" height="8" fill="#E8B84B"></rect>
+              <text x="38" y="30" font-size="10" letter-spacing=".18em">PROPAGAÇÃO SEM DETECÇÃO</text>
+              <text x="22" y="50" font-size="15" font-weight="700" letter-spacing="-.005em">A área dobra a cada 23 minutos</text>
+              <text x="22" y="68" font-size="10" fill="#6B7A92" letter-spacing=".05em">A(t) = A₀ · e^(0,0301 · t) · cerrado · vento 15 km/h</text>
+            </g>
+          </svg>

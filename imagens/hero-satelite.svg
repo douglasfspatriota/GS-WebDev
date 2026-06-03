@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 420" role="img" aria-label="Ilustração de satélite e estação de borda">
+        <defs>
+          <radialGradient id="earth" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#1d3454"></stop>
+            <stop offset="100%" stop-color="#0B1A30"></stop>
+          </radialGradient>
+          <pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse">
+            <circle cx="2" cy="2" r="1" fill="#E8B84B" opacity=".35"></circle>
+          </pattern>
+        </defs>
+
+        
+        <g fill="#E8B84B" opacity=".8">
+          <circle cx="40" cy="40" r="1.2"></circle>
+          <circle cx="120" cy="80" r="1"></circle>
+          <circle cx="380" cy="60" r="1.4"></circle>
+          <circle cx="440" cy="160" r="1"></circle>
+          <circle cx="60" cy="190" r="1.2"></circle>
+          <circle cx="420" cy="280" r="1.1"></circle>
+          <circle cx="20" cy="320" r="1"></circle>
+        </g>
+
+        
+        <circle cx="240" cy="340" r="200" fill="url(#earth)" stroke="#E8B84B" stroke-width="1.5" opacity=".95"></circle>
+        <circle cx="240" cy="340" r="200" fill="url(#dots)"></circle>
+        
+        <path d="M 60 320 Q 240 360 420 320" stroke="#E8B84B" stroke-width="1" fill="none" opacity=".5"></path>
+
+        
+        <g transform="translate(330,90)">
+          <rect x="-18" y="-12" width="36" height="24" rx="3" fill="#E8B84B"></rect>
+          <rect x="-44" y="-6" width="22" height="12" fill="#FFF0C0" stroke="#0B1A30" stroke-width=".8"></rect>
+          <rect x="22" y="-6" width="22" height="12" fill="#FFF0C0" stroke="#0B1A30" stroke-width=".8"></rect>
+          <line x1="-44" y1="-3" x2="-22" y2="-3" stroke="#0B1A30" stroke-width=".5"></line>
+          <line x1="-44" y1="3" x2="-22" y2="3" stroke="#0B1A30" stroke-width=".5"></line>
+          <line x1="22" y1="-3" x2="44" y2="-3" stroke="#0B1A30" stroke-width=".5"></line>
+          <line x1="22" y1="3" x2="44" y2="3" stroke="#0B1A30" stroke-width=".5"></line>
+          
+          <line x1="0" y1="-12" x2="0" y2="-26" stroke="#E8B84B" stroke-width="1.5"></line>
+          <circle cx="0" cy="-28" r="3" fill="#E8B84B"></circle>
+        </g>
+
+        
+        <path d="M 330 100 L 200 270" stroke="#E8B84B" stroke-width="1" stroke-dasharray="4 4" opacity=".7"></path>
+        <circle cx="200" cy="270" r="5" fill="#E8B84B" opacity=".4">
+          
+          
+        </circle>
+        <circle cx="200" cy="270" r="3" fill="#E8B84B"></circle>
+
+        
+        <g transform="translate(195,255)">
+          <rect x="-4" y="0" width="8" height="14" fill="#cbd5e8"></rect>
+          <rect x="-10" y="-12" width="20" height="14" rx="2" fill="#E8B84B" stroke="#0B1A30"></rect>
+          <circle cx="0" cy="-5" r="2" fill="#0B1A30"></circle>
+        </g>
+
+        
+        <g transform="translate(200,250)" stroke="#E8B84B" fill="none" stroke-width="1.2">
+          <path d="M -16 -4 Q 0 -14 16 -4" opacity=".8"></path>
+          <path d="M -22 -10 Q 0 -24 22 -10" opacity=".5"></path>
+        </g>
+      </svg>
