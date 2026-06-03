@@ -152,3 +152,36 @@ function renderizarPergunta() {
     containerOpcoes.appendChild(botao);
   });
 }
+
+function selecionarOpcao(indice) {
+  if (respondida) return;
+  respondida = true;
+
+  const dados = dadosQuiz[perguntaAtual];
+  const opcoes = document.querySelectorAll('.quiz-option');
+  const feedback = document.getElementById('quizFeedback');
+
+  opcoes.forEach(function(op) { op.classList.add('disabled'); });
+
+  if (indice === dados.correta) {
+    opcoes[indice].classList.add('correct');
+    feedback.textContent = '✓ Correto! ' + dados.explicacao;
+    feedback.className = 'quiz-feedback correct';
+    pontuacao++;
+  } else {
+    opcoes[indice].classList.add('wrong');
+    opcoes[dados.correta].classList.add('correct');
+    feedback.textContent = '✗ Incorreto. ' + dados.explicacao;
+    feedback.className = 'quiz-feedback wrong';
+  }
+
+  feedback.hidden = false;
+
+  const botaoProximo = document.getElementById('quizNext');
+  if (perguntaAtual < dadosQuiz.length - 1) {
+    botaoProximo.textContent = 'Próxima →';
+  } else {
+    botaoProximo.textContent = 'Ver resultado →';
+  }
+  botaoProximo.hidden = false;
+}
