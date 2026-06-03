@@ -185,3 +185,12 @@ function selecionarOpcao(indice) {
   }
   botaoProximo.hidden = false;
 }
+
+function proximaPergunta() {
+  perguntaAtual++;
+  if (perguntaAtual < dadosQuiz.length) {
+    renderizarPergunta();
+  } else {
+    mostrarResultado();
+  }
+}
