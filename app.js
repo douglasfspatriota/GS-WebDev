@@ -13,3 +13,8 @@ function definirTema(tema) {
 
   temaAtual = tema;
 }
+
+
+let slideAtual = 0;
+const totalSlides = 3;
+let timerSlideshow = null;
