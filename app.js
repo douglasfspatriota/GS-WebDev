@@ -43,3 +43,16 @@ function irParaSlide(indice) {
   resetarTimer();
   mostrarSlide(indice);
 }
+
+function iniciarTimer() {
+  timerSlideshow = setInterval(function() {
+    mostrarSlide(slideAtual + 1);
+  }, 5000);
+}
+
+function resetarTimer() {
+  clearInterval(timerSlideshow);
+  iniciarTimer();
+}
+
+iniciarTimer()
