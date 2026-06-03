@@ -124,3 +124,31 @@ const dadosQuiz = [
 let perguntaAtual = 0;
 let pontuacao = 0;
 let respondida = false;
+
+
+function renderizarPergunta() {
+  const dados = dadosQuiz[perguntaAtual];
+  const letras = ['A', 'B', 'C', 'D'];
+
+  document.getElementById('quizQuestion').textContent = dados.questao;
+  document.getElementById('quizFeedback').hidden = true;
+  document.getElementById('quizFeedback').textContent = '';
+  document.getElementById('quizNext').hidden = true;
+  respondida = false;
+
+  const progresso = ((perguntaAtual + 1) / dadosQuiz.length) * 100;
+  document.getElementById('progressFill').style.width = progresso + '%';
+  document.getElementById('progressText').textContent =
+    'Pergunta ' + (perguntaAtual + 1) + ' de ' + dadosQuiz.length;
+
+  const containerOpcoes = document.getElementById('quizOptions');
+  containerOpcoes.innerHTML = '';
+  dados.opcoes.forEach(function(opcao, i) {
+    const botao = document.createElement('button');
+    botao.className = 'quiz-option';
+    botao.innerHTML =
+      '<span class="opt-letter">' + letras[i] + '</span>' + opcao;
+    botao.onclick = function() { selecionarOpcao(i); };
+    containerOpcoes.appendChild(botao);
+  });
+}
