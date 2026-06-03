@@ -194,3 +194,31 @@ function proximaPergunta() {
     mostrarResultado();
   }
 }
+
+function mostrarResultado() {
+  document.getElementById('quizWrap').hidden = true;
+  const resultEl = document.getElementById('quizResult');
+  resultEl.hidden = false;
+
+  const percentual = Math.round((pontuacao / dadosQuiz.length) * 100);
+
+  let icone, titulo, mensagem;
+  if (percentual >= 90) {
+    icone = '🏆'; titulo = 'Excelente!';
+    mensagem = 'Você domina o tema. Pronto para defender o OrbitGuard em qualquer apresentação!';
+  } else if (percentual >= 70) {
+    icone = '🌟'; titulo = 'Muito bom!';
+    mensagem = 'Você entende bem a plataforma. Revise os conceitos que errou para atingir a excelência.';
+  } else if (percentual >= 50) {
+    icone = '📚'; titulo = 'Bom esforço!';
+    mensagem = 'Conhecimento parcial. Vale reler as seções de tecnologia e objetivos para fixar melhor.';
+  } else {
+    icone = '🔄'; titulo = 'Continue estudando!';
+    mensagem = 'Explore as seções da página e tente novamente. Você chegará lá!';
+  }
+
+  document.getElementById('resultIcon').textContent = icone;
+  document.getElementById('resultTitle').textContent = titulo;
+  document.getElementById('resultMsg').textContent = mensagem;
+  document.getElementById('resultScore').textContent = pontuacao + ' / ' + dadosQuiz.length;
+}
