@@ -33,3 +33,13 @@ function mostrarSlide(indice) {
   pontos[indice].classList.add('active');
   slideAtual = indice;
 }
+
+function mudarSlide(direcao) {
+  resetarTimer();
+  mostrarSlide(slideAtual + direcao);
+}
+
+function irParaSlide(indice) {
+  resetarTimer();
+  mostrarSlide(indice);
+}
