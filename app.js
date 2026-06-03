@@ -222,3 +222,14 @@ function mostrarResultado() {
   document.getElementById('resultMsg').textContent = mensagem;
   document.getElementById('resultScore').textContent = pontuacao + ' / ' + dadosQuiz.length;
 }
+
+function reiniciarQuiz() {
+  perguntaAtual = 0;
+  pontuacao = 0;
+  respondida = false;
+  document.getElementById('quizResult').hidden = true;
+  document.getElementById('quizWrap').hidden = false;
+  renderizarPergunta();
+}
+
+renderizarPergunta();
