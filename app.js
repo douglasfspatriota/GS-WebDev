@@ -120,3 +120,7 @@ const dadosQuiz = [
     explicacao: 'A meta de 50 municípios em 18 meses prioriza cidades do Cerrado e Pantanal, regiões com maior vulnerabilidade a queimadas no Brasil.'
   }
 ];
+
+let perguntaAtual = 0;
+let pontuacao = 0;
+let respondida = false;
