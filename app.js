@@ -275,3 +275,42 @@ function limparErro(id) {
     campo.addEventListener('change', function() { limparErro(id); });
   }
 });
+
+function enviarFormulario() {
+  let valido = true;
+
+  valido = validarCampo('nome', 'O nome é obrigatório.') && valido;
+  valido = validarCampo('email', 'O e-mail é obrigatório.') && valido;
+  valido = validarCampo('municipio', 'O município ou organização é obrigatório.') && valido;
+  valido = validarCampo('perfil', 'Selecione seu perfil.') && valido;
+  valido = validarCampo('mensagem', 'A mensagem é obrigatória.') && valido;
+
+  if (!valido) {
+    const primeiroInvalido = document.querySelector('.invalid');
+    if (primeiroInvalido) {
+      primeiroInvalido.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      primeiroInvalido.focus();
+    }
+    return;
+  }
+
+  document.getElementById('formContainer').hidden = true;
+  document.getElementById('formSuccess').hidden = false;
+}
+
+function resetarFormulario() {
+  ['nome', 'email', 'municipio', 'mensagem'].forEach(function(id) {
+    const campo = document.getElementById(id);
+    if (campo) {
+      campo.value = '';
+      campo.classList.remove('invalid');
+      document.getElementById(id + '-error').textContent = '';
+    }
+  });
+  document.getElementById('perfil').value = '';
+  document.getElementById('perfil').classList.remove('invalid');
+  document.getElementById('perfil-error').textContent = '';
+
+  document.getElementById('formContainer').hidden = false;
+  document.getElementById('formSuccess').hidden = true;
+}
