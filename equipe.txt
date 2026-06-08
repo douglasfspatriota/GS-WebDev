@@ -12,4 +12,4 @@ INTEGRANTES:
   Douglas Ferreira Santos Patriota — RM 569713
 
 LINK DO REPOSITÓRIO GITHUB:
-  https://github.com/v-cintra/gs_frontend.git
+  https://github.com/douglasfspatriota/GS-WebDev
