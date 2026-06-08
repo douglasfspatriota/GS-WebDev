@@ -1,0 +1,15 @@
+EQUIPE PRIME NEXT
+Global Solution 2026 · Indústria Espacial
+FIAP · Engenharia de Software
+
+DISCIPLINA: Web Development · Prof. Israel Marques
+
+INTEGRANTES:
+
+  Vitor Santos Cintra         — RM 569416
+  Octavio Kal Oliveira Lima   — RM 571838
+  Pedro Henrique Santos Brito — RM 573187
+  Douglas Ferreira Santos Patriota — RM 569713
+
+LINK DO REPOSITÓRIO GITHUB:
+  https://github.com/v-cintra/gs_frontend.git

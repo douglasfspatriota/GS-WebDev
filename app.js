@@ -314,3 +314,25 @@ function resetarFormulario() {
   document.getElementById('formContainer').hidden = false;
   document.getElementById('formSuccess').hidden = true;
 }
+
+const secoes = document.querySelectorAll('section[id]');
+const linksNav = document.querySelectorAll('.menu a');
+
+function atualizarNavAtiva() {
+  const scrollY = window.pageYOffset;
+  secoes.forEach(function(secao) {
+    const topo = secao.offsetTop - 120;
+    const base = topo + secao.offsetHeight;
+    if (scrollY >= topo && scrollY < base) {
+      linksNav.forEach(function(link) {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + secao.id) {
+          link.classList.add('active');
+        }
+      });
+    }
+  });
+}
+
+window.addEventListener('scroll', atualizarNavAtiva);
+atualizarNavAtiva();
