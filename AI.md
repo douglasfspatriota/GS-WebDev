@@ -38,8 +38,6 @@ A IA gerou os seguintes arquivos completos:
    - Validação de formulário campo a campo com mensagens de erro específicas e validação de formato de e-mail via regex
    - Scroll spy para nav link ativo
 
-4. **`AI.md`** — Este arquivo de registro
-
 ### O que foi alterado ou rejeitado e o motivo
 
 **Aceito integralmente:**
